@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-LitLab - Ваша цифровая библиотека</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img class="logo" src="img/Logotip.png" alt="Логотип">
+                <nav class="menuall">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Добро пожаловать в E-LitLab</h1>
+                <p>Исследуйте тысячи книг, статей и редких материалов</p>
+                <button class="btn-main" id="explore-btn">Начать исследование</button>
+            </section>
+
+            <section class="featured-books">
+                <h2>Популярные книги</h2>
+                <div class="books-list">
+                    <div class="book-item">
+                        <img src="img/1.jpg" alt="Книга 1" class="book-image">
+                        <h3>Эмили Бронте.</br>Грозовой перевал</h3>
+                        <p>Это история роковой любви Хитклифа, приемного сына владельца поместья "Грозовой Перевал", к дочери хозяина Кэтрин.</p>
+                        <button class="btn-main">Подробнее</button>
+                    </div>
+                    <div class="book-item">
+                        <img src="img/2.jpg" alt="Книга 2" class="book-image">
+                        <h3>Джек Лондон.</br>Мартин Иден</h3>
+                        <p>Роман повествует о трагической жизни простого моряка. </p>
+                        <button class="btn-main">Подробнее</button>
+                    </div>
+                    <div class="book-item">
+                        <img src="img/3.jpg" alt="Книга 3" class="book-image">
+                        <h3>Михаил Булгаков.</br>Мастер и Маргарита</h3>
+                        <p>Центральный персонаж — Дьявол, замаскированный под профессора Воланда, который обрушивается на Москву со своими очищающими выходками, которые разоблачают коррупцию и лицемерие советской культурной элиты </p>
+                        <button class="btn-main">Подробнее</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <h2>Последние новости</h2>
+                <article>
+                    <h3>Обновление библиотеки</h3>
+                    <p>Мы добавили 500 новых книг в наш каталог.</p>
+                    <a href="#">Читать далее</a>
+                </article>
+                <article>
+                    <h3>Интерактивный форум</h3>
+                    <p>Присоединяйтесь к обсуждениям и делитесь мнением.</p>
+                    <a href="#">Читать далее</a>
+                </article>
+            </section>
+
+            <section class="contact-form">
+                <h2>Свяжитесь с нами</h2>
+                <form>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="2" required></textarea>
+                    
+                    <button type="submit" class="btn-main">Отправить</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 E-LitLab. Все права защищены.</p>
+            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Пользовательское соглашение</a></p>
+        </div>
+    </footer>
+</body>
+</html>
